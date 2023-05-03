@@ -59,7 +59,7 @@ function getWeatherData () {
         var {latitude, longitude } = success.coords;
            var lat=latitude
           var lon=longitude
-        fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=b41ec3be35c7dac8aabbc21ba253137a`).then((res) => res.json()).then((data)=> showWeatherData(data)) 
+        fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=b41ec3be35c7dac8aabbc21ba253137a`).then((res) => res.json()).then((data)=> showWeatherData(data)) 
       
   
     })
